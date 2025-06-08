@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        tr, td{
+            border: 1px solid #dddddd;
+            text-align: left;
+        }
+        th{
+            background-color: #dddddd;
+        }
+        tr:nth-child(even){
+            background-color: #dddddd;
+        }
+        /* media queries */
+        @media screen and (max-width: 600px) {
+             table, thead, tbody, th, tr, td{
+            display:block
+        }
+        }
+       
+    </style>
+</head>
+<body>
+    <table>
+    <caption>Monthly Sales Data</caption>
+    <thead>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+        
+    <tbody>
+        <tr>
+            <td>Meta</td>
+            <td>Facebook</td>
+            <td>America</td>
+        </tr>
+
+        <tr>
+            <td>Youtube</td>
+            <td>CEO</td>
+            <td>India</td>
+        </tr>
+
+        <tr>
+            <td>Bangladesh</td>
+            <td>Dhaka</td>
+            <td>Wari</td>
+        </tr>
+
+        <tr>
+            <td>Bangladesh</td>
+            <td>Sylet</td>
+            <td>Hobigonj</td>
+        </tr>
+    </tbody>
+        
+    </table>
+</body>
+</html>
