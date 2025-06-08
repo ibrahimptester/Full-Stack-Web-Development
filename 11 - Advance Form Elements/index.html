@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Form Elements</title>
+    <style>
+        label, textarea{
+            display: block;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advance Form Elements</h1>
+    <!-- Textarea -->
+    <div>
+        <form>
+            <label for="message">Enter your message:</label>
+            <textarea name="message" placeholder="Enter your message" id="message" rows="5" cols="30"></textarea>
+        </form>
+    </div>
+
+    <!-- Select Menu -->
+     <div>
+        <form>
+            <label for="country">Select your Country:</label>
+            <select name="country" id="country">
+                <option value="" disabled hidden selected>Select country</option>
+                <option value="bd">Bangladesh</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ind">India</option>
+            </select>
+        </form>
+     </div>
+
+    <!-- Radio  -->
+     <div>
+        <h3>Radio</h3>
+        <form>
+            <label>Select your gender</label>
+            <label>
+                <input type="radio" name="gender" value="male">Male
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="female">Female
+            </label>
+        </form>
+     </div>
+
+     <!-- Checkbox -->
+     <div>
+        <h3>Checkbox</h3>
+        <form>
+            <label>Select your skills:</label>
+            <label>
+                <input type="checkbox" name="skills" value="pentester"> Pentester
+            </label>
+            <label>
+                <input type="checkbox" name="skills" value="web-developer"> Web Developer
+            </label>
+            <label>
+                <input type="checkbox" name="skills" value="linux-system-admin"> Linux System Admin
+            </label>
+            <label>
+                <input type="checkbox" name="skills" value="soc"> SOC Analyst
+            </label>
+        </form>
+     </div>
+     
+</body>
+</html>
