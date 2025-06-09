@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New HTML features</title>
+</head>
+<body>
+    <h1>New HTML features</h1>
+
+    <!-- 1. Figure and figcaption -->
+
+    <figure>
+        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fHww" alt="nature">
+        <figcaption>Image of nature</figcaption>
+    </figure>
+
+    <!-- 2. Time -->
+     <p>Our event will start at <time datetime="2025-06-11T14:00">2.30 PM on June 11, 2025.</time></p>
+
+     <!-- 3. Mark -->
+      <p><mark>Mango</mark> is a very tasty fruit</p>
+
+    <!-- canvas -->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    // Draw rectangle
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(20, 20, 150, 50);
+
+    // Draw text inside the rectangle
+    ctx.fillStyle = "#FFFFFF"; // Set text color to white for visibility
+    ctx.font = "20px Arial";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText("Hello World", 20 + 150 / 2, 20 + 50 / 2);
+</script>
+
+</body>
+</html>
